@@ -49,10 +49,16 @@ end
   
 def merge_data(keys, data)
    merged_array = []
-   keys.collect do |i|
-     data.each do |item|
-       
-       
+   keys.each do |key|
+     data.each do |data_merge_into|
+       data_merge_into.each do |merger_key, merger_value|
+         if data_merge_into == key[:first_name]
+           merged_array << key.merge(merger_value)
+         end
+       end
+     end
+   end
+  merged_array 
 end
 
 def find_cool
