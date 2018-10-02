@@ -59,7 +59,6 @@ def organize_schools(schools)
   new_hash = {}
   schools.each do |loc, school|
     school.each do |learns|
-      binding.pry
       two_hash = {:location => loc}
       new_hash[learns] = two_hash
    end
