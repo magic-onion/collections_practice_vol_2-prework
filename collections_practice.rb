@@ -1,4 +1,6 @@
-# your code goes here
+require 'pry'
+
+
 def begins_with_r(tools)
 new_array = tools.uniq {|x| x.start_with?("r")}
  if new_array.size == 1 
