@@ -55,9 +55,9 @@ end
 
 def organize_schools(schools)
   new_hash = {}
-  schools.each do |school, loc|
-    loc.each do |learns|
-      two_hash = {:location => loc}
+  schools.each do |loc, school|
+    school.each do |learns|
+      two_hash = {:location => school}
       new_hash[learns] = two_hash
    end
  end
