@@ -59,8 +59,7 @@ def organize_schools(schools)
   new_hash = {}
   schools.each do |school, loc_data|
     school.each do |loc, value|
-      two_hash = {:location => loc}
-      new_hash[learns] = two_hash
+      new_hash[loc] => value
    end
  end
  new_hash
