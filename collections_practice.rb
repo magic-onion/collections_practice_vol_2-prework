@@ -50,9 +50,9 @@ end
 def merge_data(keys, data)
    merged_array = []
    keys.each do |key|
-     data.each do |data_merge_into|
-       data_merge_into.each do |merger_key, merger_value|
-         if data_merge_into == key[:first_name]
+     data.each do |data_merger|
+       data_merger.each do |merger_key, merger_value|
+         if merger_key == key[:first_name]
            merged_array << key.merge(merger_value)
          end
        end
