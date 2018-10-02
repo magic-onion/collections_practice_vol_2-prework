@@ -48,7 +48,8 @@ end
 end
   
 def merge_data(keys, data)
-
+   merged_array = []
+   keys.each do |
 end
 
 def find_cool
