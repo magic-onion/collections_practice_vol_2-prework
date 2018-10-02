@@ -57,7 +57,10 @@ def organize_schools(schools)
   new_hash = {}
   schools.each do |loc, school|
     school.each do |items|
-      new_hash[]
+      if new_hash[school]
+        new_hash[items][:location] << loc
+      else
+        new_hash[school] = {location: [loc]}
     
 end
 
