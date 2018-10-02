@@ -54,7 +54,11 @@ def find_cool
 end
 
 def organize_schools(schools)
-  schools.each do |school, data|
+  new_hash = {}
+  two
+  schools.each do |loc, school|
+    school.each do |items|
+      
     
 end
 
