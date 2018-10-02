@@ -57,7 +57,7 @@ end
 
 def organize_schools(schools)
   new_hash = {}
-  schools.collect {|key, value| new_hash[v[:location]] = []}
+  schools.collect {|key, value| new_hash[value[:location]] = []}
   new_hash.each {|k, v| schools.each {|k1, v1| if k == v1[:location] then v << k1 end}}
 end
 
