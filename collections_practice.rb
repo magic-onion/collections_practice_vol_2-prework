@@ -61,7 +61,9 @@ def organize_schools(schools)
         new_hash[items][:location] << loc
       else
         new_hash[school] = {location: [loc]}
-    
+     end
+   end
+ end
 end
 
 
