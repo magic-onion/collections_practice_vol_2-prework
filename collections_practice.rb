@@ -49,7 +49,9 @@ end
   
 def merge_data(keys, data)
    merged_array = []
-   keys.each do |
+   keys.each do |data|
+     data.each do |k, v|
+       
 end
 
 def find_cool
