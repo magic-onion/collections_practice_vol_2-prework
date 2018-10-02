@@ -54,7 +54,7 @@ def find_cool
 end
 
 def organize_schools(schools)
-  new_hash = {two_hash => {}}
+  new_hash = {}
   schools.each do |loc, school|
     school.each do |items|
       
